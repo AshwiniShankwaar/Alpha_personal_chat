@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linearview">
+        <EditText
+            android:id="@+id/textpost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:background="@drawable/postinput"
+            android:textSize="18sp"
+            android:padding="30pt"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1pt"
+        android:background="@color/white"
+        android:fontFamily="sans-serif"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="18pt"
+        android:layout_height="18pt"
+        android:id="@+id/backbutton"
+        android:src="@mipmap/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5pt"
+        android:layout_marginTop="5pt"/>
+    <ImageButton
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:id="@+id/bgcolorbutton"
+        android:src="@mipmap/ic_color"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100pt"
+        android:layout_marginRight="5pt"
+        android:scaleType="fitCenter"/>
+    <ImageButton
+        android:layout_width="20pt"
+        android:layout_height="20pt"
+        android:id="@+id/fontstyle"
+        android:src="@mipmap/ic_font"
+        android:background="@null"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130pt"
+        android:layout_marginRight="5pt"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>

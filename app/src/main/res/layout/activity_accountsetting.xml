@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Accountsetting">
+
+    <include
+        layout="@layout/app_bar"
+        android:id="@+id/setting_toolbar"
+        >
+    </include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/setting_toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5pt"
+                android:id="@+id/Account">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imagekey1"
+                android:layout_width="25pt"
+                android:layout_height="25pt"
+                android:src="@drawable/ic_privarcy"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4pt"
+ />
+
+                <TextView
+                    android:id="@+id/keyname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6pt"
+                    android:layout_below="@+id/setting_toolbar"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5pt"
+                android:id="@+id/Request"
+                android:layout_below="@+id/Account">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imagekey2"
+                    android:layout_width="25pt"
+                    android:layout_height="25pt"
+                    android:src="@drawable/ic_reqestinfo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4pt"
+                     />
+
+                <TextView
+                    android:id="@+id/keyname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Request Account info"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6pt"
+                    android:layout_below="@+id/setting_toolbar"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5pt"
+                android:id="@+id/Delete_my_Account"
+                android:layout_below="@+id/Request">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imagekey3"
+                    android:layout_width="25pt"
+                    android:layout_height="25pt"
+                    android:src="@drawable/ic_delete"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4pt"
+                    />
+
+                <TextView
+                    android:id="@+id/keyname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete my Account"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/profile_image"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="6pt"
+                    android:layout_below="@+id/setting_toolbar"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

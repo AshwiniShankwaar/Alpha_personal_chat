@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+    <include
+        android:id="@+id/group_chat_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/im"
+        app:civ_border_width="2dp"
+        android:layout_below="@+id/group_chat_bar"
+        app:civ_border_color="#FF000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/profile_image">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"> 
+           <TextView
+               android:id="@+id/name"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Name"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="20dp"/>
+
+           <EditText
+               android:id="@+id/nameInput"
+               android:layout_width="320dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/name"
+               android:layout_marginLeft="20dp"
+               android:textSize="20dp"
+               android:background="@drawable/input"
+               android:paddingRight="20dp"
+               android:paddingLeft="20dp"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"/>
+           <TextView
+               android:id="@+id/username"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="userName"
+               android:layout_below="@+id/nameInput"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"/>
+
+           <EditText
+               android:id="@+id/usernameInput"
+               android:layout_width="320dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/username"
+               android:layout_marginLeft="20dp"
+               android:textSize="20dp"
+               android:background="@drawable/input"
+               android:paddingRight="20dp"
+               android:paddingLeft="20dp"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"/>
+           <TextView
+               android:id="@+id/email"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="email"
+               android:layout_below="@+id/usernameInput"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"/>
+
+           <EditText
+               android:id="@+id/emailInput"
+               android:layout_width="320dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/email"
+               android:layout_marginLeft="20dp"
+               android:textSize="20dp"
+               android:background="@drawable/input"
+               android:paddingRight="20dp"
+               android:paddingLeft="20dp"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"/>
+           <TextView
+               android:id="@+id/status"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="status"
+               android:layout_below="@+id/emailInput"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"/>
+
+           <EditText
+               android:id="@+id/stausInput"
+               android:layout_width="320dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/status"
+               android:layout_marginLeft="20dp"
+               android:textSize="20dp"
+               android:background="@drawable/input"
+               android:paddingRight="20dp"
+               android:paddingLeft="20dp"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"/>
+           <TextView
+               android:id="@+id/phone"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Phone"
+               android:layout_below="@+id/stausInput"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"/>
+
+           <EditText
+               android:id="@+id/phoneInput"
+               android:layout_width="320dp"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/phone"
+               android:layout_marginLeft="20dp"
+               android:textSize="20dp"
+               android:background="@drawable/input"
+               android:paddingRight="20dp"
+               android:paddingLeft="20dp"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"
+               />
+
+           <Button
+               android:id="@+id/edit"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Update"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/phoneInput"
+               android:layout_marginTop="20dp"
+               android:textAllCaps="false"
+               android:background="@drawable/button"/>
+       </RelativeLayout>
+   </ScrollView>
+
+
+</RelativeLayout>

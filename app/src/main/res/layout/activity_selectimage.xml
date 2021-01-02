@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectimage">
+
+
+    <ImageView
+        android:layout_width="150pt"
+        android:layout_height="150pt"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagepreview"
+        android:layout_below="@+id/backbutton"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backbutton"
+        android:src="@mipmap/back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1pt"
+        android:layout_marginLeft="1pt"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="1pt"
+        android:layout_marginTop="1pt"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/aclonica"
+        android:text="Next"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="30pt"
+        android:layout_height="30pt"
+        android:layout_below="@+id/imagepreview"
+        android:id="@+id/profiledp"
+        android:layout_marginTop="5pt"
+        android:src="@mipmap/defaultdp"/>
+    <EditText
+        android:layout_width="135pt"
+        android:layout_height="70pt"
+        android:layout_below="@id/imagepreview"
+        android:layout_toEndOf="@+id/profiledp"
+        android:layout_marginTop="5pt"
+        android:id="@+id/caption"
+        android:layout_marginLeft="1pt"
+        android:background="@drawable/input"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tagfriends"
+        android:text="Tag People"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13pt"
+        android:layout_below="@+id/caption"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="5pt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tagcount"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13pt"
+        android:layout_below="@+id/caption"
+        android:layout_marginTop="5pt"
+        android:text="0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15pt"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:id="@+id/tagfriendframe">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tagbackbutton"
+                    android:src="@mipmap/back"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="1pt"
+                    android:layout_marginLeft="1pt"
+                    android:layout_weight="1"
+                    android:background="@null"/>
+
+                <Button
+                    android:id="@+id/tagnextbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="1pt"
+                    android:layout_marginTop="1pt"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Done"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="110pt"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tagfriendrecycleview"
+
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

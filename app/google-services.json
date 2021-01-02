@@ -1,0 +1,109 @@
+{
+  "project_info": {
+    "project_number": "61452387865",
+    "firebase_url": "https://chaton-6b2eb.firebaseio.com",
+    "project_id": "chaton-6b2eb",
+    "storage_bucket": "chaton-6b2eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61452387865:android:33552e3deec9c0aefd4c88",
+        "android_client_info": {
+          "package_name": "com.nanb.alpha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61452387865-late5kqkko22ma6jo47me6bf3us72mm7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nanb.alpha",
+            "certificate_hash": "a5780169265e953bd055f2c8b24691c3b41acd77"
+          }
+        },
+        {
+          "client_id": "61452387865-5ojbdajnb5ugqmlh3vpf7mi5ugu4oqm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nanb.alpha",
+            "certificate_hash": "176303f3afc30060e3a3bef715423672d3d637d3"
+          }
+        },
+        {
+          "client_id": "61452387865-l65hv844dc0nfuk9krraqeh5u8e0pl7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nanb.alpha",
+            "certificate_hash": "4dd0a9abbe2cf7e8f28eba6b1ba62ac8b06ba090"
+          }
+        },
+        {
+          "client_id": "61452387865-811fhatmpo2pie41t707b52q0i7ddg5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCboU-_SkelqNx-1ncjeOY5ZZKJzX1oxiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61452387865-811fhatmpo2pie41t707b52q0i7ddg5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61452387865:android:a3196b1f177ee57b",
+        "android_client_info": {
+          "package_name": "com.nanb.chaton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61452387865-7lbhlsjgsi7u5db1310uf5cfa1ubqruo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nanb.chaton",
+            "certificate_hash": "f726ecc5756e81e7c53016fcfac0e66defdd695d"
+          }
+        },
+        {
+          "client_id": "61452387865-2bo9fncsqbpeddosf1t6ea4neo5b1mr1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nanb.chaton",
+            "certificate_hash": "98e2a762aea6fbdf55c3820fc96c825a89392e5c"
+          }
+        },
+        {
+          "client_id": "61452387865-811fhatmpo2pie41t707b52q0i7ddg5v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCboU-_SkelqNx-1ncjeOY5ZZKJzX1oxiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61452387865-811fhatmpo2pie41t707b52q0i7ddg5v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

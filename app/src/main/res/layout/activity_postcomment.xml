@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".postcomment">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commenttoolbar"
+        android:background="@color/colorPrimary"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/commentrecycle"
+        android:layout_below="@+id/commenttoolbar"
+        android:layout_above="@+id/commentsection"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentsection"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="20pt"
+            android:layout_height="20pt"
+            android:id="@+id/currentuserdp"
+            android:src="@mipmap/defaultdp"
+            />
+        <EditText
+            android:layout_width="130pt"
+            android:layout_height="20pt"
+            android:id="@+id/edittext"
+            android:background="@drawable/edittextblackborder"
+            android:layout_marginLeft="1pt"
+            android:layout_marginRight="1pt"
+            android:layout_marginBottom="1pt"
+            android:text="Add some comment....."
+            android:padding="2pt"
+            />
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="20pt"
+            android:src="@drawable/text_postbutton"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:id="@+id/post"/>
+    </LinearLayout>
+
+</RelativeLayout>

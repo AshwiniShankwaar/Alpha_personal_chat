@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="2pt"
+        android:layout_marginRight="2pt"
+        >
+        <ImageView
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:id="@+id/profiledp"
+            android:src="@mipmap/defaultdp"
+            />
+        <TextView
+            android:layout_width="146pt"
+            android:layout_height="25pt"
+            android:id="@+id/textcomment"
+            />
+        <ImageView
+            android:layout_width="25pt"
+            android:layout_height="25pt"
+            android:id="@+id/postimage"
+            android:src="@drawable/im"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".App_info"
+    >
+
+    <ImageView
+        android:layout_width="80pt"
+        android:layout_height="80pt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100pt"
+        android:src="@drawable/logo"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Alpha"
+        android:textColor="@color/Black"
+        android:textSize="30pt"
+        android:textStyle="bold"
+        android:id="@+id/logoname"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoname"
+        android:layout_centerHorizontal="true"
+        android:text="Version 0.0.001"
+        android:textSize="13pt"
+        android:textStyle="bold"
+        android:id="@+id/version"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version"
+        android:layout_centerHorizontal="true"
+        android:text="&#169; 2019 NANB"
+        android:textSize="11pt"
+        android:textStyle="bold" />
+
+</RelativeLayout>

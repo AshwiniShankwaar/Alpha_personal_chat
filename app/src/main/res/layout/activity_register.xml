@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".Register">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/SignUp"
+                android:layout_width="50pt"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Rpassword"
+                android:layout_marginLeft="33pt"
+                android:layout_marginTop="10pt"
+                android:background="@drawable/button"
+                android:text="Sign Up"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/LogIn"
+                android:layout_width="50pt"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Rpassword"
+                android:layout_marginLeft="30pt"
+                android:layout_marginTop="10pt"
+                android:layout_toRightOf="@+id/SignUp"
+                android:background="@drawable/button"
+                android:text="Log in"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <EditText
+                android:id="@+id/Rpassword"
+                android:layout_width="130pt"
+                android:layout_height="20pt"
+                android:layout_below="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Re-Enter Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="130pt"
+                android:layout_height="20pt"
+                android:layout_below="@+id/Welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Email i'd"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="130pt"
+                android:layout_height="20pt"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/Welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40pt"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="Welcome to ChatOn"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="17pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/welcomeNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SignUp"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="We welcome you to ChatOn family"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+
+        </RelativeLayout>
+</RelativeLayout>

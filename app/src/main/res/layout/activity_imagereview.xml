@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".imagereview"
+    android:background="@color/Black">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <ImageButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/back"
+           android:src="@mipmap/back"
+           android:background="@color/Black"
+           android:layout_marginTop="5pt"
+           />
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/imageView"
+           android:src="@drawable/im"
+           android:layout_marginTop="2pt"
+           android:layout_gravity="center_horizontal"
+           />
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

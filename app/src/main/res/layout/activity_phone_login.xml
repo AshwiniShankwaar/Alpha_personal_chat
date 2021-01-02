@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".phoneLogin">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/phoneNumberInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/input"
+        android:padding="8dp"
+        android:hint="Write phone number here"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/note"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/verificationInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/input"
+        android:padding="8dp"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/phoneNumberInput"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/send_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send verification code"
+        android:background="@drawable/button"
+        android:textAllCaps="false"
+        android:layout_below="@id/verificationInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        />
+    <Button
+        android:id="@+id/verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify code"
+        android:background="@drawable/button"
+        android:textAllCaps="false"
+        android:layout_below="@+id/send_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your phone number with country code"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login"
+        />
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="85pt"
+        android:textSize="14pt"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:fontFamily="@font/annie_use_your_telescope"
+
+        />
+</RelativeLayout>

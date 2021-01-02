@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#026AF8</color>
+    <color name="colorPrimaryDark">#07469B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="darkGreen">#2FAA16</color>
+    <color name="orange">#EC591A</color>
+    <color name="grey">#918A87</color>
+    <color name="greylight">#E7E4E3</color>
+    <color name="Black">#000000</color>
+    <color name="edittextbg1">#E31EFA</color>
+    <color name="edittextbg2">#711EFA</color>
+    <color name="edittextbg3">#1EB7FA</color>
+    <color name="edittextbg4">#1EF3FA</color>
+    <color name="edittextbg5">#1EFA9D</color>
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+</resources>

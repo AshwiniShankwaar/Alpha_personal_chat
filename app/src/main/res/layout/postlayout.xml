@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upperframelayout"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="20pt"
+                android:layout_height="20pt"
+                android:src="@mipmap/defaultdp"
+                android:id="@+id/profilepic"
+                android:layout_marginLeft="3pt"/>
+            <TextView
+                android:layout_width="130pt"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminusername"
+                android:text="username"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="5pt"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu"
+                android:id="@+id/morebutton"
+                android:layout_marginTop="4pt"
+                android:layout_marginLeft="3pt"/>
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativepost"
+        android:layout_below="@+id/upperframelayout"
+        android:padding="2pt">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120pt"
+            android:id="@+id/image" />
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="120pt"
+            android:id="@+id/video"
+            android:visibility="gone"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playButton"
+            android:src="@mipmap/playbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/likedsection"
+        android:layout_below="@+id/relativepost">
+        <ImageView
+            android:layout_width="12pt"
+            android:layout_height="12pt"
+            android:src="@drawable/heart"
+            android:id="@+id/likebutton"
+            android:layout_marginTop="4pt"
+            android:layout_marginLeft="3pt"/>
+        <ImageView
+            android:layout_width="12pt"
+            android:layout_height="12pt"
+            android:src="@drawable/ic_comment"
+            android:id="@+id/commentbutton"
+            android:layout_marginTop="4pt"
+            android:layout_marginLeft="8pt"
+            />
+        <ImageView
+            android:layout_width="12pt"
+            android:layout_height="12pt"
+            android:src="@drawable/ic_unsavesave"
+            android:id="@+id/savebutton"
+            android:layout_marginTop="4pt"
+            android:layout_marginLeft="8pt"
+
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/likecount"
+        android:text="10 likes"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:layout_below="@+id/likedsection"
+        android:layout_marginTop="2pt"
+        android:layout_marginLeft="3pt"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/likedby"
+        android:text="Liked by"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/likecount"
+        android:layout_marginTop="3pt"
+        android:layout_marginLeft="3pt"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:text="captiion"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/likedby"
+        android:layout_marginTop="2pt"
+        android:padding="3pt"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/comment"
+        android:layout_below="@+id/description"
+        android:paddingLeft="4pt"
+        android:paddingRight="3pt"
+        >
+
+        <TextView
+            android:id="@+id/commentuserid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="userid: "
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usercomment"
+            android:text="comment doen by user"
+            android:textAllCaps="false"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/comment"
+        android:id="@+id/reply"
+        android:paddingLeft="15pt"
+        >
+
+        <TextView
+            android:id="@+id/replyuserid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="userid: "
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userreply"
+            android:text="comment doen by user"
+            android:textAllCaps="false"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewallcomment"
+        android:text="View all comments"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:layout_marginLeft="4pt"
+        android:layout_below="@+id/reply"/>
+</RelativeLayout>
